@@ -26,17 +26,16 @@
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-            lstArticoli.Items.Clear();
+        {   
+            lstVisualizza.Items.Clear();
             switch (cmbTipo.Text)
             {
-                case "Visualizza articoli": 
-                    foreach (string a in articoli.Keys) 
+                case "Visualizza articoli":
+                    foreach (KeyValuePair<string, Articolo> art in articoli)
                     {
-                        lstArticoli.Items.Add(a);   
+                        lstVisualizza.Items.Add(art.Value.Visualizzazione());
                     }
                     break;
-
             }
         }
 

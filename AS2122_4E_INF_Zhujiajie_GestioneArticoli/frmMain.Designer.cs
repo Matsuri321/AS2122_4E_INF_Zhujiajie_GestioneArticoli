@@ -39,7 +39,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cmbTipo = new System.Windows.Forms.ComboBox();
-            this.lstArticoli = new System.Windows.Forms.ListBox();
+            this.lstVisualizza = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.lblArticoli = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
@@ -152,14 +152,14 @@
             this.cmbTipo.Size = new System.Drawing.Size(159, 23);
             this.cmbTipo.TabIndex = 1;
             // 
-            // lstArticoli
+            // lstVisualizza
             // 
-            this.lstArticoli.FormattingEnabled = true;
-            this.lstArticoli.ItemHeight = 15;
-            this.lstArticoli.Location = new System.Drawing.Point(450, 68);
-            this.lstArticoli.Name = "lstArticoli";
-            this.lstArticoli.Size = new System.Drawing.Size(227, 274);
-            this.lstArticoli.TabIndex = 2;
+            this.lstVisualizza.FormattingEnabled = true;
+            this.lstVisualizza.ItemHeight = 15;
+            this.lstVisualizza.Location = new System.Drawing.Point(450, 68);
+            this.lstVisualizza.Name = "lstVisualizza";
+            this.lstVisualizza.Size = new System.Drawing.Size(227, 274);
+            this.lstVisualizza.TabIndex = 2;
             // 
             // button1
             // 
@@ -187,7 +187,7 @@
             this.ClientSize = new System.Drawing.Size(690, 412);
             this.Controls.Add(this.lblArticoli);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.lstArticoli);
+            this.Controls.Add(this.lstVisualizza);
             this.Controls.Add(this.cmbTipo);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmMain";
@@ -212,7 +212,7 @@
         private TextBox txtDescrizione;
         private TextBox txtCodice;
         private ComboBox cmbTipo;
-        private ListBox lstArticoli;
+        private ListBox lstVisualizza;
         private Button button1;
         private Label lblArticoli;
     }

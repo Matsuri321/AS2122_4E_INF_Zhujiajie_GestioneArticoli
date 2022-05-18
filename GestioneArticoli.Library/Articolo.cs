@@ -20,5 +20,9 @@
             this.unitaDiMisura = unitaDiMisura;
             this.prezzo = prezzo;
         }
+        public string Visualizzazione()
+        {
+            return $"{Descrizione} {UnitaDiMisura} {Prezzo} ({codice})";
+        }
     }
 }
