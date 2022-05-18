@@ -170,15 +170,15 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(21, 370);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 15);
+            this.label5.Size = new System.Drawing.Size(62, 15);
             this.label5.TabIndex = 4;
-            this.label5.Text = "label5";
+            this.label5.Text = "Articoli (0)";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(689, 450);
+            this.ClientSize = new System.Drawing.Size(690, 412);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lstArticoli);
