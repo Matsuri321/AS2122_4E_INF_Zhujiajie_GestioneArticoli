@@ -11,17 +11,36 @@
 
 
 
-
         private void btnAggiungiModifica_Click(object sender, EventArgs e)
         {
-
+            var a = new Articolo(txtCodice.Text, txtDescrizione.Text, cmbUnitadiMisura.Text, Convert.ToDouble(txtPrezzo.Text));
+            if (articoli.ContainsKey(a.Codice))
+            {
+                articoli[a.Codice] = a;
+            } 
+            else articoli.Add(a.Codice, a);
+            {
+               lblArticoli.Text = $"Articoli({articoli.Count})";
+            }
+            
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            lstArticoli.Items.Clear();
+            switch (cmbTipo.Text)
+            {
+                case "Visualizza articoli": 
+                    foreach (string a in articoli.Keys) 
+                    {
+                        lstArticoli.Items.Add(a);   
+                    }
+                    break;
 
+            }
+        }
 
-
-
-
+        
 
 
 
@@ -38,10 +57,7 @@
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
       
     }

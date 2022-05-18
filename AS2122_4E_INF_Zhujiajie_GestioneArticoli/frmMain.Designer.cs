@@ -38,10 +38,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbTipo = new System.Windows.Forms.ComboBox();
             this.lstArticoli = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblArticoli = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,6 +76,11 @@
             // cmbUnitadiMisura
             // 
             this.cmbUnitadiMisura.FormattingEnabled = true;
+            this.cmbUnitadiMisura.Items.AddRange(new object[] {
+            "NR",
+            "KG",
+            "Q",
+            "T"});
             this.cmbUnitadiMisura.Location = new System.Drawing.Point(120, 105);
             this.cmbUnitadiMisura.Name = "cmbUnitadiMisura";
             this.cmbUnitadiMisura.Size = new System.Drawing.Size(194, 23);
@@ -139,13 +144,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Codice";
             // 
-            // comboBox1
+            // cmbTipo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(450, 23);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(159, 23);
-            this.comboBox1.TabIndex = 1;
+            this.cmbTipo.FormattingEnabled = true;
+            this.cmbTipo.Location = new System.Drawing.Point(450, 23);
+            this.cmbTipo.Name = "cmbTipo";
+            this.cmbTipo.Size = new System.Drawing.Size(159, 23);
+            this.cmbTipo.TabIndex = 1;
             // 
             // lstArticoli
             // 
@@ -166,26 +171,26 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label5
+            // lblArticoli
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 370);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 15);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Articoli (0)";
+            this.lblArticoli.AutoSize = true;
+            this.lblArticoli.Location = new System.Drawing.Point(21, 370);
+            this.lblArticoli.Name = "lblArticoli";
+            this.lblArticoli.Size = new System.Drawing.Size(62, 15);
+            this.lblArticoli.TabIndex = 4;
+            this.lblArticoli.Text = "Articoli (0)";
             // 
-            // Form1
+            // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(690, 412);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblArticoli);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lstArticoli);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbTipo);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
+            this.Name = "frmMain";
             this.Text = "AS2122, 4E, INF, Zhu jia jie, Lab 2.2, 18/05/2022";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -206,9 +211,9 @@
         private TextBox txtPrezzo;
         private TextBox txtDescrizione;
         private TextBox txtCodice;
-        private ComboBox comboBox1;
+        private ComboBox cmbTipo;
         private ListBox lstArticoli;
         private Button button1;
-        private Label label5;
+        private Label lblArticoli;
     }
 }
