@@ -17,11 +17,14 @@
             if (articoli.ContainsKey(a.Codice))
             {
                 articoli[a.Codice] = a;
-            } 
-            else articoli.Add(a.Codice, a);
-            {
-               lblArticoli.Text = $"Articoli({articoli.Count})";
             }
+            else
+            {
+                articoli.Add(a.Codice, a);
+            }
+              
+            lblArticoli.Text = $"Articoli({articoli.Count})";
+            
             
         }
 
@@ -36,6 +39,7 @@
                         lstVisualizza.Items.Add(art.Value.Visualizzazione());
                     }
                     break;
+             
             }
         }
 
