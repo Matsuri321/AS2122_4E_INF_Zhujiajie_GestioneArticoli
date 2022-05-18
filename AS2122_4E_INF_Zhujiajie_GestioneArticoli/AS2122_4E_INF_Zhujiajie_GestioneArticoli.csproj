@@ -8,4 +8,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GestioneArticoli.Library\GestioneArticoli.Library.csproj" />
+  </ItemGroup>
+
 </Project>

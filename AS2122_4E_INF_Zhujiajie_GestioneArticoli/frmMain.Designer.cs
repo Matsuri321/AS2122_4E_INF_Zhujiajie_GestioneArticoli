@@ -1,6 +1,6 @@
 ﻿namespace AS2122_4E_INF_Zhujiajie_GestioneArticoli
 {
-    partial class Form1
+    partial class frmMain
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnAggiungiModifica = new System.Windows.Forms.Button();
+            this.cmbUnitadiMisura = new System.Windows.Forms.ComboBox();
+            this.txtPrezzo = new System.Windows.Forms.TextBox();
+            this.txtDescrizione = new System.Windows.Forms.TextBox();
+            this.txtCodice = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtCodice = new System.Windows.Forms.TextBox();
-            this.txtDescrizione = new System.Windows.Forms.TextBox();
-            this.txtPrezzo = new System.Windows.Forms.TextBox();
-            this.cmbUnitadiMisura = new System.Windows.Forms.ComboBox();
-            this.btnAggiungiModifica = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.lstArticoli = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -62,6 +62,45 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "dettagli articolo ";
+            // 
+            // btnAggiungiModifica
+            // 
+            this.btnAggiungiModifica.Location = new System.Drawing.Point(107, 199);
+            this.btnAggiungiModifica.Name = "btnAggiungiModifica";
+            this.btnAggiungiModifica.Size = new System.Drawing.Size(167, 31);
+            this.btnAggiungiModifica.TabIndex = 8;
+            this.btnAggiungiModifica.Text = "Aggiungi/Modifica articolo ";
+            this.btnAggiungiModifica.UseVisualStyleBackColor = true;
+            this.btnAggiungiModifica.Click += new System.EventHandler(this.btnAggiungiModifica_Click);
+            // 
+            // cmbUnitadiMisura
+            // 
+            this.cmbUnitadiMisura.FormattingEnabled = true;
+            this.cmbUnitadiMisura.Location = new System.Drawing.Point(120, 105);
+            this.cmbUnitadiMisura.Name = "cmbUnitadiMisura";
+            this.cmbUnitadiMisura.Size = new System.Drawing.Size(194, 23);
+            this.cmbUnitadiMisura.TabIndex = 7;
+            // 
+            // txtPrezzo
+            // 
+            this.txtPrezzo.Location = new System.Drawing.Point(102, 144);
+            this.txtPrezzo.Name = "txtPrezzo";
+            this.txtPrezzo.Size = new System.Drawing.Size(212, 23);
+            this.txtPrezzo.TabIndex = 6;
+            // 
+            // txtDescrizione
+            // 
+            this.txtDescrizione.Location = new System.Drawing.Point(107, 69);
+            this.txtDescrizione.Name = "txtDescrizione";
+            this.txtDescrizione.Size = new System.Drawing.Size(207, 23);
+            this.txtDescrizione.TabIndex = 5;
+            // 
+            // txtCodice
+            // 
+            this.txtCodice.Location = new System.Drawing.Point(107, 33);
+            this.txtCodice.Name = "txtCodice";
+            this.txtCodice.Size = new System.Drawing.Size(207, 23);
+            this.txtCodice.TabIndex = 4;
             // 
             // label4
             // 
@@ -99,44 +138,6 @@
             this.label1.Size = new System.Drawing.Size(44, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Codice";
-            // 
-            // txtCodice
-            // 
-            this.txtCodice.Location = new System.Drawing.Point(107, 33);
-            this.txtCodice.Name = "txtCodice";
-            this.txtCodice.Size = new System.Drawing.Size(207, 23);
-            this.txtCodice.TabIndex = 4;
-            // 
-            // txtDescrizione
-            // 
-            this.txtDescrizione.Location = new System.Drawing.Point(107, 69);
-            this.txtDescrizione.Name = "txtDescrizione";
-            this.txtDescrizione.Size = new System.Drawing.Size(207, 23);
-            this.txtDescrizione.TabIndex = 5;
-            // 
-            // txtPrezzo
-            // 
-            this.txtPrezzo.Location = new System.Drawing.Point(102, 144);
-            this.txtPrezzo.Name = "txtPrezzo";
-            this.txtPrezzo.Size = new System.Drawing.Size(212, 23);
-            this.txtPrezzo.TabIndex = 6;
-            // 
-            // cmbUnitadiMisura
-            // 
-            this.cmbUnitadiMisura.FormattingEnabled = true;
-            this.cmbUnitadiMisura.Location = new System.Drawing.Point(120, 105);
-            this.cmbUnitadiMisura.Name = "cmbUnitadiMisura";
-            this.cmbUnitadiMisura.Size = new System.Drawing.Size(194, 23);
-            this.cmbUnitadiMisura.TabIndex = 7;
-            // 
-            // btnAggiungiModifica
-            // 
-            this.btnAggiungiModifica.Location = new System.Drawing.Point(107, 199);
-            this.btnAggiungiModifica.Name = "btnAggiungiModifica";
-            this.btnAggiungiModifica.Size = new System.Drawing.Size(167, 31);
-            this.btnAggiungiModifica.TabIndex = 8;
-            this.btnAggiungiModifica.Text = "Aggiungi/Modifica articolo ";
-            this.btnAggiungiModifica.UseVisualStyleBackColor = true;
             // 
             // comboBox1
             // 
